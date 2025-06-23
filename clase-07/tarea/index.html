@@ -1,0 +1,549 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tarea Clase 06</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-subcontainer">
+          <a id="nav-logo" href="#">Verti</a>
+          <span id="nav-logo-companion">HTML5</span>
+        </div>
+        <ul id="nav-ul" class="nav-subcontainer">
+          <li><a id="nav-first-a" href="#cards-container">Lorem</a></li>
+          <li><a href="#cards-container">Ipsum</a></li>
+          <li><a href="#cards-container">Dolor</a></li>
+          <li><a href="#cards-container">Sit</a></li>
+          <li><a href="#cards-container">Amet</a></li>
+        </ul>
+        <div id="hamburger-container">
+          <svg
+            id="hamburger-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4 18L20 18"
+                stroke="#444444"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M4 12L20 12"
+                stroke="#444444"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M4 6L20 6"
+                stroke="#444444"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container box-shadow" id="hero-container">
+        <div id="hero-text-container">
+          <h1>Hi, this is Verti.</h1>
+          <h2>A free, responsive template for the website of your dreams.</h2>
+        </div>
+        <div id="hero-button-container">
+          <button>Download</button>
+          <button class="secondary-colors">More info</button>
+        </div>
+      </div>
+      <div class="container" id="cards-container">
+        <div class="card box-shadow">
+          <div class="card-img-container">
+            <img
+              src="https://38.media.tumblr.com/f264b862a6bf8ba5b9f06bf8bf4ea635/tumblr_na0kcnVUoi1st5lhmo1_1280.jpg"
+              alt="buildings"
+            />
+          </div>
+          <div class="card-text-container">
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              dolores facere atque est? Ea libero, fugit ullam quis. Cupiditate
+              dolor molestias error eum eius mollitia neque sint temporibus
+              facilis veritatis. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Harum perspiciatis illum maxime earum ipsam quas
+              corporis suscipit blanditiis similique, iste unde, optio error
+              incidunt, magni alias animi dolore dolorem, quae.
+            </p>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-img-container">
+            <img
+              src="https://38.media.tumblr.com/2741d3e79ea3782f87c65c1e44b5f9fa/tumblr_na0kb0BLqR1st5lhmo1_1280.jpg"
+              alt="city"
+            />
+          </div>
+          <div class="card-text-container">
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              dolores facere atque est? Ea libero, fugit ullam quis. Cupiditate
+              dolor molestias error eum eius mollitia neque sint temporibus
+              facilis veritatis. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Harum perspiciatis illum maxime earum ipsam quas
+              corporis suscipit blanditiis similique, iste unde, optio error
+              incidunt, magni alias animi dolore dolorem, quae.
+            </p>
+          </div>
+        </div>
+        <div class="card box-shadow">
+          <div class="card-img-container">
+            <img
+              src="https://38.media.tumblr.com/817b3ff5f5a288b2691725abeb3d1531/tumblr_na0k8dFafa1st5lhmo1_1280.jpg"
+              alt="city view"
+            />
+          </div>
+          <div class="card-text-container">
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              dolores facere atque est? Ea libero, fugit ullam quis. Cupiditate
+              dolor molestias error eum eius mollitia neque sint temporibus
+              facilis veritatis. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Harum perspiciatis illum maxime earum ipsam quas
+              corporis suscipit blanditiis similique, iste unde, optio error
+              incidunt, magni alias animi dolore dolorem, quae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="form__container">
+          <h2 class="form__title">Contacto</h2>
+          <form>
+            <fieldset>
+              <legend>Sobre vos</legend>
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="¿Cuál es tu nombre?"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="correo@ejemplo.com"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="555 555 5555"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tu empresa</legend>
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="empresa">Empresa</label>
+                  <input
+                    type="text"
+                    id="empresa"
+                    name="empresa"
+                    placeholder="¿Dónde trabajás?"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="ciudad">Ciudad</label>
+                  <input
+                    type="text"
+                    id="ciudad"
+                    name="ciudad"
+                    placeholder="¿Dónde está ubicada tu empresa?"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="pais">País</label>
+                  <select id="pais" name="pais">
+                    <option value="" disabled selected>
+                      Seleccioná un país
+                    </option>
+                    <option value="AR">Argentina</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="UK">Reino Unido</option>
+                    <option value="AF">África</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="provincia">Provincia/Estado</label>
+                  <select id="provincia" name="provincia">
+                    <option value="" disabled selected>
+                      Seleccioná una provincia/estado
+                    </option>
+                    <option value="BA">Buenos Aires</option>
+                    <option value="CBA">Córdoba</option>
+                    <option value="SF">Santa Fe</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="form__buttons">
+            <button class="form-button">Enviar</button>
+          </div>
+        </div>
+
+        <!-- Segundo formulario (demo) -->
+        <div class="form__container" style="display: none">
+          <div class="close">X</div>
+          <h2 class="form__title">Solicitá una demo</h2>
+          <form>
+            <fieldset>
+              <legend>Sobre vos</legend>
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="demo-nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="demo-nombre"
+                    name="demo-nombre"
+                    placeholder="¿Cuál es tu nombre?"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="demo-empresa">Empresa</label>
+                  <input
+                    type="text"
+                    id="demo-empresa"
+                    name="demo-empresa"
+                    placeholder="¿Dónde trabajás?"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="demo-email">Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="demo-email"
+                    name="demo-email"
+                    placeholder="correo@ejemplo.com"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="demo-telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="demo-telefono"
+                    name="demo-telefono"
+                    placeholder="555 555 5555"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tu empresa</legend>
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="demo-ciudad">Ciudad</label>
+                  <input
+                    type="text"
+                    id="demo-ciudad"
+                    name="demo-ciudad"
+                    placeholder="¿Dónde está ubicada tu empresa?"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-control">
+                  <label for="demo-pais">País</label>
+                  <select id="demo-pais" name="demo-pais">
+                    <option value="" disabled selected>
+                      Seleccioná un país
+                    </option>
+                    <option value="AR">Argentina</option>
+                    <option value="US">Estados Unidos</option>
+                    <option value="UK">Reino Unido</option>
+                    <option value="AF">África</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="demo-provincia">Provincia/Estado</label>
+                  <select id="demo-provincia" name="demo-provincia">
+                    <option value="" disabled selected>
+                      Seleccioná una provincia/estado
+                    </option>
+                    <option value="BA">Buenos Aires</option>
+                    <option value="CBA">Córdoba</option>
+                    <option value="SF">Santa Fe</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="form__buttons">
+            <button class="form-button">Solicitar demo</button>
+          </div>
+        </div>
+      </div>
+
+      <!--/.container-->
+    </main>
+    <footer>
+      <div id="footer-container">
+        <div id="content-container">
+          <div id="about-column">
+            <h3 class="title">ABOUT</h3>
+            <p>
+              Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to help the
+              upcoming programmers with the code. Scanfcode focuses on providing
+              the most efficient code or snippets as the code wants to be
+              simple. We will help programmers build up concepts in different
+              programming languages that include C, C++, Java, HTML, CSS,
+              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </div>
+          <div class="list-column">
+            <h3 class="title">CATEGORIES</h3>
+            <ul class="list">
+              <li>C</li>
+              <li>UI Design</li>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Android</li>
+              <li>Templates</li>
+            </ul>
+          </div>
+          <div class="list-column">
+            <h3 class="title">QUICK LINKS</h3>
+            <ul class="list">
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Contribute</li>
+              <li>Privacy Policy</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
+        </div>
+        <div id="copyright">
+          <div>
+            <p>Copyright © 2017 All Rights Reserved by Scanfcode.</p>
+          </div>
+          <div>
+            <ul id="social-media-list">
+              <li>
+                <div class="social-media-icon">
+                  <svg
+                    viewBox="-5 0 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#818A91"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>facebook [#176]</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-385.000000, -7399.000000)"
+                          fill="#818A91"
+                        >
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            <path
+                              d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                              id="facebook-[#176]"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="social-media-icon">
+                  <svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#818A91"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>twitter [#154]</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-60.000000, -7521.000000)"
+                          fill="#818A91"
+                        >
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            <path
+                              d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                              id="twitter-[#154]"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="social-media-icon">
+                  <svg
+                    fill="#818A91"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>dribble</title>
+                      <path
+                        d="M25.916 7.921c-1.881 2.234-4.289 3.965-7.035 5.009l-0.118 0.039c0.3 0.612 0.587 1.231 0.85 1.857 0.1 0.225 0.187 0.45 0.275 0.662 0.927-0.102 2.003-0.16 3.092-0.16 2.063 0 4.077 0.208 6.023 0.605l-0.193-0.033c-0.020-3.040-1.107-5.821-2.904-7.994l0.017 0.021zM13.001 3.569c1.595 2.15 3.176 4.6 4.598 7.151l0.178 0.347c2.712-0.908 4.989-2.511 6.694-4.6l0.021-0.026c-2.247-2.006-5.228-3.232-8.494-3.232-1.063 0-2.096 0.13-3.084 0.375l0.088-0.018zM3.46 13.395c4.219-0.022 8.295-0.59 12.176-1.636l-0.333 0.076c-1.652-2.899-3.222-5.318-4.912-7.644l0.163 0.236c-3.596 1.721-6.227 4.966-7.077 8.875l-0.015 0.085zM6.484 24.585c2.42-3.882 6.010-6.839 10.271-8.408l0.141-0.045c0.169-0.056 0.337-0.105 0.506-0.15-0.325-0.731-0.675-1.458-1.040-2.174-3.888 1.154-8.355 1.819-12.977 1.819-0.066 0-0.131-0-0.196-0l0.010 0-0.005 0.39c0 0.003 0 0.006 0 0.009 0 3.297 1.25 6.302 3.301 8.568l-0.010-0.011zM21.005 27.809c-0.682-3.699-1.63-6.957-2.863-10.070l0.126 0.361-0.082 0.025c-4.314 1.346-7.826 4.192-10.002 7.915l-0.045 0.083c2.145 1.688 4.885 2.707 7.863 2.707 1.805 0 3.522-0.374 5.078-1.049l-0.083 0.032zM28.646 18.052c-1.571-0.474-3.376-0.747-5.245-0.747-0.964 0-1.911 0.073-2.836 0.213l0.104-0.013c0.98 2.564 1.842 5.629 2.436 8.789l0.054 0.344c2.874-1.96 4.893-4.993 5.482-8.51l0.010-0.075zM16 30.996c0 0 0 0-0 0-8.282 0-14.996-6.714-14.996-14.996s6.714-14.996 14.996-14.996c8.282 0 14.996 6.714 14.996 14.996 0 0 0 0 0 0v0c-0.011 8.277-6.718 14.984-14.995 14.996h-0.001z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div class="social-media-icon">
+                  <svg
+                    fill="#818A91"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                    stroke="#818A91"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g id="7935ec95c421cee6d86eb22ecd125aef">
+                        <path
+                          style="
+                            display: inline;
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                          "
+                          d="M116.504,500.219V170.654H6.975v329.564H116.504 L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941 C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219 c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533 c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531 c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="https://wa.me/5491123456789"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+            fill="#FFFFFF"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+            fill="#FFFFFF"
+          ></path>
+        </g>
+      </svg>
+    </a>
+  </body>
+</html>

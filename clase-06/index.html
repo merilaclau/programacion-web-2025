@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formularios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#">🐱 Gatitos</a></li>
+        <li><a href="#">🐶 Perritos</a></li>
+        <li><a href="#">🐵 Monitos</a></li>
+        <li><a href="#">🐻 Ositos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Formulario de adopción</h2>
+      <form>
+        <label for="name">Nombre (requerido)</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="selection">Animalito a adoptar</label>
+        <select id="selection" name="selection">
+          <option value="">-- Elegí una opción --</option>
+          <option value="option1">Gatito</option>
+          <option value="option2">Perrito</option>
+          <option value="option1">Unicornio</option>
+          <option value="option2">Dinosaurio</option>
+        </select>
+
+        <label for="message">Por qué querés adoptar?</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <p>Dónde vivís</p>
+        <div class="input-container">
+        <input type="radio" id="caba" name="localidad" value="CABA" />
+        <label for="caba">CABA</label>
+        </div>
+        <div class="input-container">
+        <input type="radio" id="gba" name="localidad" value="GBA" />
+        <label for="gba">GBA</label>
+        </div>
+
+
+        <p>Aceptás términos y condiciones</p>
+        <div class="input-container">
+        <input type="checkbox" id="newsletter" name="subscribe" value="newsletter" />
+        <label for="newsletter">Newsletter</label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+/* Reset básico para eliminar estilos por defecto de las etiquetas así no se generan espaciados indeseados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  /* Le asignamos position relative para que pueda ser el marco de referencia de la lista (.menu) de elementos a, 
+  que en mobile adopta position absolute para ubicarse abajo de la hamburguesa */
+  position: relative;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Oculta la tilde del input checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Esto genera la columna de rayitas de la hamburguesa */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Esta combinación de selectores toma todos los elementos span que estén dentro de algún elemento con clase .hamburger y así es que se dibuja cada rayita de la hamburguesa*/
+.hamburger span {
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Estilos para la barra de navegación con valores mobile-first usando position absolute justo abajo de la hamburguesa */
+.menu {
+  list-style: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  /* Acá ponemos display none para que la lista no se vea y recién se verá al hacer click sobre la hamburguesa */
+  display: none;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+}
+
+.menu li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Al hacer click sobre la hamburguesa, la lista de elementos <a> pasa a tener display flex y deja de estar oculto */
+#menu-toggle:checked + .hamburger + .menu {
+  display: flex;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+input:required:invalid {
+  border-color: red;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ocultamos la hamburguesa a partir de pantallas con ancho de 768px.
+Asignamos position static a la lista de elementos <a> para que deje de tener position absolute y se vea como una barra de navegación horizontal.
+*/
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    flex-direction: row;
+    /* Se usa !important cuando queremos asegurarnos de que sí o sí se pisen los estilos de algo. Usarlo con prudencia!!! */
+    display: flex !important;
+    justify-content: flex-end;
+    background: none;
+  }
+
+  .menu li a {
+    padding: 8px 12px;
+  }
+}

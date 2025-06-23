@@ -1,0 +1,33 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url('./img/gatitos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 20px 120px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.coral-background-color {
+    background-color: coral;
+}
+
+#primer-h2 {
+    color: rgb(46, 16, 217);
+}
+  
+.codystar-font-regular {
+    font-family: "Codystar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+

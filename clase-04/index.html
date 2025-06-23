@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Clase 04</title>
+</head>
+<body>
+    <span class="pink-background-color">Soy un span y ocupo el ancho de mi contenido</span>
+    <p class="pink-background-color">Soy un p y ocupo todo el ancho disponible</p>
+
+    <h1>Qué es flex!?</h1>
+    <p>Acá abajo hay un div gris que contiene otros divs de colores:</p>
+    <div class="container grey-background-color">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+
+    <h1>justify-content</h1>
+    <h2>center</h2>
+    <div class="container grey-background-color justify-center">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="container grey-background-color justify-end">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+    <h2>space-between</h2>
+    <div class="container grey-background-color justify-space-between">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+    <h2>space-evenly</h2>
+    <div class="container grey-background-color justify-space-evenly">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+    <h2>space-around</h2>
+    <div class="container grey-background-color justify-space-around">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+
+    <h1>align-items</h1>
+    <h2>center</h2>
+    <div class="container grey-background-color justify-center align-items-center">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+
+    <h1>align-self</h1>
+    <h2>flex-end</h2>
+    <div class="container grey-background-color justify-center align-items-center">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div align-self-end">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+    </div>
+
+    <h1>flex-wrap</h1>
+    <h2>no-wrap (por defecto)</h2>
+    <div class="container grey-background-color">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+        <div class="yellow-background-color child-div">
+            <p>Soy el quinto div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el sexto div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el séptimo div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el octavo div</p>
+        </div>
+    </div>
+    <h2>wrap</h2>
+    <div class="container grey-background-color wrap">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+        <div class="yellow-background-color child-div">
+            <p>Soy el quinto div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el sexto div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el séptimo div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el octavo div</p>
+        </div>
+    </div>
+    <h2>wrap-reverse</h2>
+    <div class="container grey-background-color wrap-reverse">
+        <div class="yellow-background-color child-div">
+            <p>Soy el primer div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el segundo div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el tercer div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el cuarto div</p>
+        </div>
+        <div class="yellow-background-color child-div">
+            <p>Soy el quinto div</p>
+        </div>
+        <div class="pink-background-color child-div">
+            <p>Soy el sexto div</p>
+        </div>
+        <div class="blue-background-color child-div">
+            <p>Soy el séptimo div</p>
+        </div>
+        <div class="green-background-color child-div">
+            <p>Soy el octavo div</p>
+        </div>
+    </div>
+</body>
+</html>
