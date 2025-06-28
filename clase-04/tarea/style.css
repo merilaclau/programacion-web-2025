@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans:300,400italic,800italic,400,800);
+
+body {
+  background-color: #ededed;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  color: #444;
+  font-size: 48px;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: left;
+  padding: 18px;
+  margin: 7.2px 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #0090c5;
+  cursor: pointer;
+}
+
+.secondary-colors {
+  color: #696969;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.box-shadow {
+  box-shadow: 0px 6px 0px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 64px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero-text-container {
+  width: 60%;
+}
+
+.ejemplo-box-sizing {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  background-color: red;
+  box-sizing: border-box;
+}
+
+#hero-button-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 300px;
+}
+
+.card-text-container {
+  padding: 24px;
+}
+
+/* 
+Las clases que están a continuación no están en uso, pero son ejemplos 
+de cómo se pueden escribir las propiedades margin o padding de manera compacta 
+*/
+
+.clase-ejemplo-margin {
+  /* Escribir esto: */
+  margin: 10px 45px 15px 17px;
+  /* es equivalente a escribir esto: */
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 15px;
+  margin-left: 17px;
+}
+
+.clase-ejemplo-margin {
+  /* Escribir esto: */
+  margin: 10px 45px;
+  /* es equivalente a escribir esto: */
+  margin-top: 10px;
+  margin-right: 45px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+}

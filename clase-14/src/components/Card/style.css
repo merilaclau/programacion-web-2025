@@ -1,0 +1,557 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans:300,400italic,800italic,400,800);
+
+body {
+  background-color: #ededed;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ededed;
+  z-index: 100;
+  width: 100%;
+  height: calc(32px + 32px + 72px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  top: 0;
+  background-color: #ededed;
+}
+
+ul {
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.nav-subcontainer {
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  font-weight: 800;
+  padding: 9.6px;
+  text-decoration: none;
+  margin: 0 8px;
+  border-radius: 10px;
+  color: inherit;
+}
+
+li a:hover {
+  background-color: #ffffff;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 14px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  border: none;
+  font-family: inherit;
+  font-weight: 800;
+  text-align: left;
+  padding: 18px;
+  margin: 7.2px 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #0090c5;
+  cursor: pointer;
+}
+
+.secondary-colors {
+  color: #696969;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+#nav-logo {
+  font-family: "Oleo Script", serif;
+  color: #ffffff;
+  background-color: #ff4486;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+#nav-logo-companion {
+  font-weight: 800;
+  margin-left: 32px;
+}
+
+#nav-first-a {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+#hamburger-container {
+  width: 15%;
+  max-width: 70px;
+  align-self: center;
+}
+
+.box-shadow {
+  box-shadow: 0px 6px 0px -3px rgba(0, 0, 0, 0.1);
+}
+
+#hero-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 64px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(32px + 32px + 72px);
+}
+
+#hero-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 700px;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 300px;
+}
+
+.card-text-container {
+  padding: 24px;
+}
+
+#footer-container {
+  padding: 32px;
+  background-color: #26272b;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content-container {
+  display: flex;
+  justify-content: center;
+}
+#about-column {
+  height: 100%;
+  margin-right: 32px;
+}
+
+#copyright {
+  padding-top: 16px;
+  margin-top: 24px;
+  border-top: 1px solid #737373;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.social-media-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #33353d;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+#social-media-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.title {
+  color: white;
+  font-weight: 100;
+}
+
+/* Breakpoint de mobile chico */
+@media (min-width: 320px) {
+  nav {
+    left: 5%;
+  }
+  #nav-logo {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  #nav-ul {
+    display: none;
+  }
+  #hamburger-icon {
+    display: static;
+    width: 100%;
+    height: auto;
+  }
+  #hamburger-container {
+    display: static;
+  }
+  .container {
+    width: 90%;
+  }
+  #hero-container,
+  #content-container,
+  #copyright {
+    flex-direction: column;
+  }
+  #copyright {
+    justify-content: center;
+  }
+  #hero-text-container,
+  #hero-button-container,
+  #content-container {
+    width: 100%;
+  }
+  #hero-text-container {
+    margin-bottom: 16px;
+  }
+  #hero-button-container button {
+    max-width: 360px;
+  }
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #cards-container {
+    justify-content: center;
+  }
+  #about-column,
+  .list-column {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+/* Breakpoint de mobile grande */
+@media (min-width: 414px) {
+  nav {
+    left: 15%;
+  }
+  #nav-logo {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .container {
+    width: 70%;
+  }
+  #content-container {
+    width: 70%;
+  }
+}
+
+/* Breakpoint de tablet */
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 48px;
+  }
+  button {
+    font-size: 36px;
+  }
+}
+
+/* Breakpoint de desktop/tablet */
+@media (min-width: 955px) {
+  #nav-ul {
+    display: flex;
+  }
+  #hamburger-icon,
+  #hamburger-container {
+    display: none;
+  }
+  .card {
+    width: 600px;
+    align-self: center;
+  }
+  #content-container,
+  #copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #about-column {
+    width: 50%;
+  }
+  .list-column {
+    width: 25%;
+  }
+}
+
+/* Breakpoint de desktop */
+@media (min-width: 1024px) {
+}
+
+/* Breakpoint de desktop muy grande */
+@media (min-width: 1200px) {
+  #hero-container {
+    flex-direction: row;
+  }
+
+  #hero-text-container {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+  #hero-button-container {
+    width: 35%;
+  }
+
+  #hero-button-container button {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card {
+    width: 360px;
+    margin-bottom: 0;
+  }
+  #cards-container {
+    justify-content: space-between;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Contenedor principal del formulario */
+.form__container {
+  width: 70%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 64px;
+  border-radius: 10px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.form__title {
+  color: #293948;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Fila del formulario */
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* En pantallas grandes, poner los campos uno al lado del otro */
+@media (min-width: 700px) {
+  .form-row {
+    flex-direction: row;
+  }
+}
+
+/* Espaciado lateral entre campos */
+.form-control {
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-grow: 1;
+}
+
+/* Agrupación de campos */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+/* Título de fieldset */
+legend {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 13px;
+  color: #455a64;
+  margin-bottom: 32px;
+  position: relative;
+  width: 100%;
+}
+
+/* Línea decorativa debajo del legend */
+legend:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 8px;
+  margin-left: 16px;
+  width: 100%;
+  background: #e8ecef;
+}
+
+/* Etiquetas de los campos */
+label {
+  color: #b0bec5;
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.56px;
+  margin-bottom: 8px;
+}
+
+/* Campos de entrada */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #fff;
+  border: 1.6px solid #c7d6de;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #141920;
+  margin-bottom: 32px;
+  transition: border 0.2s ease-in-out;
+}
+
+/* Estilo personalizado para el select */
+select {
+  appearance: none;
+  background: url(https://www.pigeonholelive.com/images/chevron-down.png)
+    no-repeat;
+  background-size: 15px;
+  background-position: right 24px center;
+  color: rgba(52, 72, 91, 0.7);
+}
+
+/* Enfocar input */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1.6px solid #52a9fd;
+  outline: none;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(52, 72, 91, 0.3);
+}
+
+/* Botón del formulario */
+.form-button {
+  width: 200px;
+  height: 45px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4083c4;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+
+}
+
+/* Hover del botón */
+.form-button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
+}
+
+/* Contenedor de botones */
+.form__buttons {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
