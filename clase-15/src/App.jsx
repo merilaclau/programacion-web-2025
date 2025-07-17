@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Saludo from "./components/Saludo";
-import Card from "./components/Card";
 
 import "./App.css";
 
